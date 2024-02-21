@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  background-color: #081b31;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 40px 20px;
+}
+
+.choice > img {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 7.5px solid transparent;
+  cursor: pointer;
+}
+
+.choice > img:hover {
+  border: 7.5px solid #081b31;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 200px;
+  margin: 0 20px;
+}
+
+#user-score,
+#comp-score {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 7.5px;
+}
+
+.msg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 20px;
+}
+
+.msg {
+  background-color: #081b31;
+  color: #fff;
+  padding: 12.5px 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+.win {
+  background-color: #5efe65a1;
+  color: #0a451b;
+}
+
+.lose {
+  background-color: #ff3c3cab;
+  color: #b30000;
+}
+
+.draw {
+  background-color: #b3b3b39c;
+  color: #081b31;
+}
+
+@media (max-width: 430px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .choices {
+    gap: 10px;
+  }
+
+  .choice > img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .scoreboard {
+    gap: 125px;
+  }
+
+  .msg {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  h1 {
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+
+  .choices {
+    margin: 20px 10px 10px;
+    row-gap: 5px;
+  }
+
+  .choice > img {
+    width: 125px;
+    height: 125px;
+  }
+
+  .scoreboard {
+    gap: 80px;
+    margin: 0 10px;
+    font-size: 0.8rem;
+  }
+
+  #user-score,
+  #comp-score {
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+  }
+
+  .msg-container {
+    margin: 25px 10px;
+  }
+
+  .msg {
+    font-size: 0.9rem;
+    padding: 7.5px 12.5px;
+  }
+}
+
+@media (max-width: 280px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+  .choices {
+    margin: 30px 10px 40px;
+    row-gap: 10px;
+  }
+
+  .choice > img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .choice > img:hover {
+    border: 5px solid #081b31;
+  }
+}
