@@ -1,5 +1,5 @@
 # Description
-A simple Rock-Paper-Scissors game made using HTML, CSS and Vanilla JS. Fully Responsive for all screen sizes.
+Rock-Paper-Scissors is a simple, fun to play web game made using HTML, CSS and Vanilla JS. It is fully responsive for all screen sizes.
 
 # Live Demo
 |  #  | Project                                                                      | Live Demo                                                              |
